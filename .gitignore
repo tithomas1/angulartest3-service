@@ -1,0 +1,9 @@
+logs/*
+!.gitkeep
+app/**/*.js
+app/**/*.map
+node_modules/
+images/
+tmp
+.DS_Store
+.idea
