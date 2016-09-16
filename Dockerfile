@@ -24,8 +24,8 @@ RUN npm install --unsafe-perm=true
 
 # Web server
 RUN apk --no-cache add nginx curl
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY nginx-default.conf /etc/nginx/conf.d/default.conf
+COPY conf.nginx /etc/nginx/nginx.conf
+COPY default.nginx /etc/nginx/conf.d/default.conf
 
 # Add the rest of the sources
 ADD . /app
